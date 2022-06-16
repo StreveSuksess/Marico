@@ -1,0 +1,64 @@
+.intro{
+    margin: 0 auto;
+    padding: 24rem 2rem 9rem 2rem;
+}
+
+.intro__title{
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 13.5rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.2rem;
+    line-height: 14rem;
+    text-align: center;
+    @include breakpoint($very_big_phone-bp) {
+        font-size: 9rem;
+    }
+    @include breakpoint($big_phone-bp) {
+        font-size: 6rem;
+        line-height: 10rem;
+    }
+    @include breakpoint($mini_phone-bp) {
+        font-size: 5rem;
+        line-height: 9rem;
+    }
+}
+
+.title__white{
+    display: inline-block;
+    color: $white;
+}
+
+.title__gradient{
+    display: inline-block;
+
+    background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro__content{
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+}
+
+.intro__content__title{
+    display: inline-block;
+    margin-bottom: 5rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 6rem;
+    text-align: center;
+
+    color: $white;
+}
+

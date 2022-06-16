@@ -1,0 +1,48 @@
+.step{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 18rem;
+    &--first{
+        max-width: 93rem;
+    }
+    &--second{
+        max-width: 88.6rem;
+    }
+    &--third{
+        max-width: 112rem;
+    }
+    &--mission{
+        max-width: 99.4rem;
+    }
+    &--team{
+        margin-bottom: 5.9rem;
+    }
+}
+
+.step__sup{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: $primary;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.step__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: $secondary;
+    margin-bottom: 3.4rem;
+    &--mission{
+        color: $white;
+    }
+}

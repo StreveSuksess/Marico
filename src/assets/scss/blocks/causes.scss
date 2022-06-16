@@ -1,0 +1,32 @@
+.causes{
+    display: grid;
+    grid-template-columns: 44.3rem 44.3rem 44.3rem;
+    grid-column-gap: 10.7rem;
+    @include breakpoint($pre_middle-bp) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10.7rem;
+    }
+}
+.cause__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 5.2rem;
+    color: $white;
+    text-align: center;
+    img{
+        margin: 0 0.8rem 1rem 0;
+    }
+}
+.cause__text{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    color: $secondary;
+    text-align: center;
+}

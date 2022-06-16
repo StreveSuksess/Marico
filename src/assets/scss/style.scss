@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $black;
+    font-size: 2rem;
+    color: $white;
+    overflow-x: hidden;
+}
+
+span{
+    display: inline-block;
+}
+
+.blue__text{
+    color: $primary
+}
+
+@import "blocks/container";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/creators";
+@import "blocks/intro";
+@import "blocks/section";
+@import "blocks/causes";
+@import "blocks/step";
+@import "blocks/tile";
+@import "blocks/experts";
+@import "blocks/help";
+@import "blocks/footer";
+@import "blocks/about";
+@import "blocks/team";
+@import "blocks/sources";
+@import "blocks/pricing";
+@import "blocks/form";

@@ -1,0 +1,124 @@
+.form{
+    margin-top: 18rem;
+}
+
+.form__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7.5rem;
+    line-height: 11.2rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.form__subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+}
+
+.inputs{
+    max-width: 111.9rem;
+    margin: 0 auto;
+    margin-top: 7.7rem;
+    margin-bottom: 7rem;
+    &--sign{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem 14.4rem;
+        @include breakpoint($tablet-bp) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+    }
+    &--login{
+        display: flex;
+        gap: 8rem 14.4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.input__group{
+    position: relative;
+    width: 48.7rem;
+    height: 5.2rem;
+    img{
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+        z-index: 10;
+    }
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
+}
+
+.input{
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid $white;
+    padding-bottom: 1.5rem;
+    background: $black;
+    color: $white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 3.4rem;
+    width: 100%;
+    height: 100%;
+    &::placeholder{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.3rem;
+        line-height: 3.4rem;
+    }
+}
+
+.form__or__title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.4rem;
+    line-height: 8.1rem;
+    text-align: center;
+}
+
+.form__or__subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+}
+
+.or__buttons{
+    margin-top: 4.6rem;
+    margin-bottom: 6.9rem;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($laptop-bp) {
+        align-items: center;
+        gap: 5rem;
+        flex-direction: column;
+    }
+}
+
+.form__footer__text{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-bottom: 7.4rem;
+}

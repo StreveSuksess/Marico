@@ -1,0 +1,49 @@
+.creators{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--intro{
+        margin-top: 2rem;
+    }
+    &--footer{
+        margin-top: 2.6rem;
+    }
+    @include breakpoint($very_big_phone-bp) {
+        flex-direction: column;
+    }
+}
+
+.creators__count{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+
+    color: $white;
+
+    margin-right: 0.9rem;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 2.86rem;
+        height: 2.86rem;
+        margin-right: 0.982rem;
+
+        background: url(/assets/images/dot.svg);
+    }
+}
+
+.creators__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    color: $secondary;
+    @include breakpoint($very_big_phone-bp) {
+        font-size: 2rem;
+        text-align: center;
+    }
+}

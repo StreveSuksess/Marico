@@ -1,0 +1,174 @@
+.buttons{
+    margin: 0 auto;
+    display: flex;
+    &--intro{
+        justify-content: center;
+    }
+    .button.blue{
+        margin-right: 2.5rem;
+    }
+    @include breakpoint($middle-bp) {
+        justify-content: center;
+    }
+    @include breakpoint($big_phone-bp) {
+        justify-content: center;
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+
+.button{
+    display: block;
+    border-radius: 1rem;
+    transition: background .4s, color .4s;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+
+    &.blue{
+        background: $primary;
+        color: $white;
+        &:hover{
+            background: $white;
+            color: $primary;
+        }
+    }
+
+    &.black{
+        border: .1rem solid $secondary;
+        color: $secondary;
+        &:hover{
+            background: $secondary;
+            color: $white;
+        }
+    }
+
+    &.gray{
+        border: .1rem solid $secondary;
+        color: $secondary;
+        background: #0E0E0E;
+        &:hover{
+            background: $white;
+        }
+    }
+
+    &.border__blue{
+        border: 3.5px solid #4681E7;
+        color: $white;
+        background: #131313;
+        &:hover{
+            border: $white;
+            background: $white;
+            color: #4681E7;
+        }
+    }
+
+    &.white{
+        background: $white;
+        color: #3C82F4;
+        &:hover{
+            background: #3C82F4;
+            color: $white;
+        }
+    }
+
+    &.border__white{
+        border: .2rem solid $white;
+        color: $white;
+        &:hover{
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    &--header{
+        width: 11.9rem;
+        height: 5.5rem;
+        line-height: 5.5rem;
+    }
+    &--intro{
+        width: 31.3rem;
+        height: 7.7rem;
+        line-height: 7.7rem;
+        @include breakpoint($big_phone-bp) {
+            width: 100%;
+        }
+    }
+    &--step{
+        width: 31.3rem;
+        height: 7.7rem;
+        line-height: 7.7rem;
+        margin: 0 auto;
+        @include breakpoint($middle_phone-bp) {
+            width: 100%;
+        }
+    }
+    &--section{
+        width: 20.7rem;
+        height: 6.5rem;
+        line-height: 6.5rem;
+        @include breakpoint($big_phone-bp) {
+            width: 100%;
+        }
+    }
+    &--tile{
+        width: 28.3rem;
+        height: 7.4rem;
+        line-height: 7.4rem;
+        margin: 0 auto;
+    }
+    &--footer{
+        width: 47.2rem;
+        height: 10.2rem;
+        line-height: 10.2rem;
+        margin: 0 auto;
+        @include breakpoint($very_big_phone-bp) {
+            width: 100%;
+        }
+    }
+    &--plan{
+        width: 85%;
+        height: 10.15rem;
+        line-height: 10.15rem;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 3.675rem;
+        left: 3.675rem;
+        @include breakpoint($tablet-bp) {
+            width: 92%;
+        }
+        @include breakpoint($mini_tablet-bp) {
+            width: 85%;
+        }
+        @include breakpoint($big_phone-bp) {
+            width: 82%;
+        }
+        @include breakpoint($middle_phone-bp) {
+            width: 80%;
+        }
+    }
+    &--input{
+        width: 48.8rem;
+        height: 8.5rem;
+        line-height: 8.5rem;
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+        }
+    }
+    &--or{
+        width: 45.4rem;
+        height: 7.5rem;
+        line-height: 7.5rem;
+        img{
+            margin-right: 2.5rem;
+            margin-bottom: 2.2rem;
+        }
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+        }
+    }
+}

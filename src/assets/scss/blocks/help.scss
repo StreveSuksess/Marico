@@ -1,0 +1,26 @@
+.section--help{
+    background: url(/assets/images/section/help.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80rem;
+}
+.help__text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 10.5rem;
+    text-align: center;
+    color: $white;
+    display: block;
+    margin: 23rem auto;
+    max-width: 123.6rem;
+    @include breakpoint($very_big_phone-bp) {
+        font-size: 4rem;
+    }
+    @include breakpoint($big_phone-bp) {
+        line-height: 6.5rem;
+        margin: 15rem auto;
+        
+    }
+}

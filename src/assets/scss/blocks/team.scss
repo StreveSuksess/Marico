@@ -1,0 +1,60 @@
+.team__content{
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($very_big_phone-bp) {
+        flex-direction: column;
+        gap: 10rem;
+    }
+}
+
+.team__creator{
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.7rem;
+    }
+}
+
+.creator__name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 5.2rem;
+    color: $white;
+    text-align: center;
+}
+.creator__activity{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: #7F7F7F;
+    text-align: center;
+
+    display: block;
+    margin-bottom: 2.1rem;
+}
+
+.creator__link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after{
+        content: "";
+        display: block;
+        margin-left: 0.5rem;
+        width: 14.44px;
+        height: 15.71px;
+        background: url(/assets/images/team/link.svg);
+    }
+}
